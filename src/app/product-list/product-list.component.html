@@ -33,7 +33,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr *ngFor="let p of products">
+                    <tr *ngFor="let p of filteredProductList">
                         <td>
                             <img class = 'productIcon' *ngIf = 'showImage'
                             [style.width.px] ='imageWidth'
