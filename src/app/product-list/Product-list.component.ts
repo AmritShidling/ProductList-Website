@@ -1,11 +1,11 @@
-import { Component } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 import { IProduct } from "./product";
 @Component({
     selector:'pm-product',
     templateUrl: './product-list.component.html',
     styleUrls: ['./product-list.component.css']
 })
-export class ProductListComponent{
+export class ProductListComponent implements OnInit{
     pageTitle: String = 'Product List';
     productFilter: String = 'tom';
     imageHeight: number = 30;
@@ -38,5 +38,8 @@ export class ProductListComponent{
     ];
     togleImage() : void{
         this.showImage =! this.showImage;
+    }
+    ngOnInit(){
+        console.log("life cycle hooked");
     }
 }
