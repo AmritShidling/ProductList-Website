@@ -1,0 +1,21 @@
+table{
+    border: 1px;
+    background-color: blanchedalmond;
+}
+th{
+    height: auto;
+    font-weight: 1000;
+    color: gray;
+    background-color: black;
+}
+.custom{
+    height: 100;
+    color: gray;
+    font-weight: 1000;  
+    background-color: black;
+    border-color: gray;
+    /* border-width: 4px; */
+}
+.productIcon{
+    border-radius: 20%;
+}

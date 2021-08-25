@@ -1,8 +1,9 @@
 import { Component } from "@angular/core";
-
+import { IProduct } from "./product";
 @Component({
     selector:'pm-product',
-    templateUrl: './product-list.component.html'
+    templateUrl: './product-list.component.html',
+    styleUrls: ['./product-list.component.css']
 })
 export class ProductListComponent{
     pageTitle: String = 'Product List';
@@ -11,7 +12,7 @@ export class ProductListComponent{
     imageWidth: number = 60;
     showImage: boolean = false;
     showOrHide: String = 'Show';
-    products: any[] = [
+    products: IProduct[] = [
         {
             "productId" : 2,
             "productName" : "g cart",

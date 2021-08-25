@@ -20,7 +20,7 @@
                 <thead>
                     <tr>
                         <th>
-                            <button  class='btn btn-primary'>
+                            <button  class='btn btn-primary custom'>
                                 {{showImage ? 'Hide' : 'Show'}} Image
                             </button>
                             
@@ -35,7 +35,7 @@
                 <tbody>
                     <tr *ngFor="let p of products">
                         <td>
-                            <img *ngIf = 'showImage'
+                            <img class = 'productIcon' *ngIf = 'showImage'
                             [style.width.px] ='imageWidth'
                                  [style.height.px] = 'imageHeight'
                                  [title] = p.productName
