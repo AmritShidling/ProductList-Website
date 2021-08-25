@@ -7,7 +7,15 @@ import { IProduct } from "./product";
 })
 export class ProductListComponent implements OnInit{
     pageTitle: String = 'Product List';
-    productFilter: String = 'tom';
+    // productFilter: String = 'tom';
+    private _productFilter: string = '';
+    get productFilter() : string{
+        return this._productFilter;
+    }
+    set productFilter(value : string){
+        this._productFilter = value;
+        console.log('setting '+value);
+    }
     imageHeight: number = 30;
     imageWidth: number = 60;
     showImage: boolean = false;
@@ -40,6 +48,6 @@ export class ProductListComponent implements OnInit{
         this.showImage =! this.showImage;
     }
     ngOnInit(){
-        console.log("life cycle hooked");
+        this._productFilter = 'cont';
     }
 }
